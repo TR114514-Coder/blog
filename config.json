@@ -17,7 +17,7 @@
     "bottomText":"❤️转载请注明出处❤️",
     "showPostSource":"1",
     "indexScript":"<script src='https://blog-assets.traveler.dpdns.org/assets/NumPagination.js'></script>",
-    "allHead":"<script src='https://blog-assets.traveler.dpdns.org/assets/GmeekVercount.js'></script>",
+    "allHead":"<script src='https://blog-assets.traveler.dpdns.org/assets/GmeekVercount.js'></script><script src='https://blog-assets.traveler.dpdns.org/assets/毛玻璃.js'>",
     "script":"<script src='https://blog-assets.traveler.dpdns.org/assets/articletoc.js'></script><script src='https://blog-assets.traveler.dpdns.org/assets/lightbox.js'></script>",
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
     "homeUrl":"http://b.traveler.dpdns.org"
