@@ -49,7 +49,7 @@ URI 路径|等于|/v
 concat(http.request.uri.path, "/", substring(uuidv4(cf.random_seed), 0, 3), ".jpg")
 ```
 完整的配置图如下
-
+`Gmeek-html<img src="https://img.traveler.dpdns.org/v2/vaJ3Uor.png">`
 然后点击`保存`
 接下来就弄好了
 ## 访问地址
