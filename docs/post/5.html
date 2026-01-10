@@ -18,7 +18,59 @@ GET https://g-bg-api.traveler.dpdns.org/h
 # 下面这个是手机版的
 GET https://g-bg-api.traveler.dpdns.org/v
 ```
-# 搭建教程。">
+# 搭建教程
+## 部署到Cloudflare Pages
+打开 [TR114514-Coder/bg-api](https://github.com/TR114514-Coder/bg-api)
+`Fork`一份到自己的账号下
+然后`git clone`下来
+把你的图片放到`oriImg`里面
+注意，`h`是横向的，也就是电脑版，`v`是竖向的，也就是手机版
+然后`python gen_img.py`
+他就会把图片弄到`dist`文件夹里面
+接下来，你可以`git push`上去，也可以压缩`dist`文件夹
+如果你是`push`上去的，请你在`Cloudflare`新建一个`Pages`
+然后链接你的`Git存储库`也就是你`Fork`的库
+如果是压缩`dist`文件夹的话，就把压缩包上传到`Cloudflare Pages`
+接下来把构建目录设置为`dist`
+最后绑定一个`自定义域名`即可
+## 设置规则
+点击你托管的域名
+在左侧点击`规则`，然后点击`概述`
+新建一个`URL重写`规则
+`规则名字`随便填
+在`如果传入请求匹配…`中选择`自定义筛选表达式`
+`当传入请求匹配时...`按照下面这样子填
+```text
+字段|运算符|值
+主机名|等于|这里写你你的`Pages`绑定的域名地址
+And
+URI 路径|等于|/h
+Or
+URI 路径|等于|/v
+```
+`表达式预览`是这样的
+```
+(http.host eq '你Pages绑定的域名地址' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
+# 这里贴上我的表达式
+(http.host eq 'g-bg-api.traveler.dpdns.org' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
+```
+在下面`路径`这里面选`重写到`
+然后选择`Dynamic`
+输入下面这个
+```
+concat(http.request.uri.path, '/', substring(uuidv4(cf.random_seed), 0, 3), '.jpg')
+```
+完整的配置图如下
+
+然后点击`保存`
+接下来就弄好了
+## 访问地址
+```http
+# 电脑版
+GET https://你的域名/h
+# 手机版
+GET https://你的域名/v
+```。">
 <meta property="og:title" content="免费无限制壁纸/背景API">
 <meta property="og:description" content="# 调用
 直接上链接
@@ -28,7 +80,59 @@ GET https://g-bg-api.traveler.dpdns.org/h
 # 下面这个是手机版的
 GET https://g-bg-api.traveler.dpdns.org/v
 ```
-# 搭建教程。">
+# 搭建教程
+## 部署到Cloudflare Pages
+打开 [TR114514-Coder/bg-api](https://github.com/TR114514-Coder/bg-api)
+`Fork`一份到自己的账号下
+然后`git clone`下来
+把你的图片放到`oriImg`里面
+注意，`h`是横向的，也就是电脑版，`v`是竖向的，也就是手机版
+然后`python gen_img.py`
+他就会把图片弄到`dist`文件夹里面
+接下来，你可以`git push`上去，也可以压缩`dist`文件夹
+如果你是`push`上去的，请你在`Cloudflare`新建一个`Pages`
+然后链接你的`Git存储库`也就是你`Fork`的库
+如果是压缩`dist`文件夹的话，就把压缩包上传到`Cloudflare Pages`
+接下来把构建目录设置为`dist`
+最后绑定一个`自定义域名`即可
+## 设置规则
+点击你托管的域名
+在左侧点击`规则`，然后点击`概述`
+新建一个`URL重写`规则
+`规则名字`随便填
+在`如果传入请求匹配…`中选择`自定义筛选表达式`
+`当传入请求匹配时...`按照下面这样子填
+```text
+字段|运算符|值
+主机名|等于|这里写你你的`Pages`绑定的域名地址
+And
+URI 路径|等于|/h
+Or
+URI 路径|等于|/v
+```
+`表达式预览`是这样的
+```
+(http.host eq '你Pages绑定的域名地址' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
+# 这里贴上我的表达式
+(http.host eq 'g-bg-api.traveler.dpdns.org' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
+```
+在下面`路径`这里面选`重写到`
+然后选择`Dynamic`
+输入下面这个
+```
+concat(http.request.uri.path, '/', substring(uuidv4(cf.random_seed), 0, 3), '.jpg')
+```
+完整的配置图如下
+
+然后点击`保存`
+接下来就弄好了
+## 访问地址
+```http
+# 电脑版
+GET https://你的域名/h
+# 手机版
+GET https://你的域名/v
+```。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://b.traveler.dpdns.org/post/5.html">
 <meta property="og:image" content="https://q1.qlogo.cn/g?b=qq&nk=2197077248&s=640">
@@ -99,7 +203,53 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-k">GET</span><span class="pl-c1"> https://g-bg-api.traveler.dpdns.org/h</span>
 <span class="pl-ii"># 下面这个是手机版的</span>
 <span class="pl-k">GET</span><span class="pl-c1"> https://g-bg-api.traveler.dpdns.org/v</span></pre></div>
-<h1>搭建教程</h1></div>
+<h1>搭建教程</h1>
+<h2>部署到Cloudflare Pages</h2>
+<p>打开 <a href="https://github.com/TR114514-Coder/bg-api">TR114514-Coder/bg-api</a><br>
+<code class="notranslate">Fork</code>一份到自己的账号下<br>
+然后<code class="notranslate">git clone</code>下来<br>
+把你的图片放到<code class="notranslate">oriImg</code>里面<br>
+注意，<code class="notranslate">h</code>是横向的，也就是电脑版，<code class="notranslate">v</code>是竖向的，也就是手机版<br>
+然后<code class="notranslate">python gen_img.py</code><br>
+他就会把图片弄到<code class="notranslate">dist</code>文件夹里面<br>
+接下来，你可以<code class="notranslate">git push</code>上去，也可以压缩<code class="notranslate">dist</code>文件夹<br>
+如果你是<code class="notranslate">push</code>上去的，请你在<code class="notranslate">Cloudflare</code>新建一个<code class="notranslate">Pages</code><br>
+然后链接你的<code class="notranslate">Git存储库</code>也就是你<code class="notranslate">Fork</code>的库<br>
+如果是压缩<code class="notranslate">dist</code>文件夹的话，就把压缩包上传到<code class="notranslate">Cloudflare Pages</code><br>
+接下来把构建目录设置为<code class="notranslate">dist</code><br>
+最后绑定一个<code class="notranslate">自定义域名</code>即可</p>
+<h2>设置规则</h2>
+<p>点击你托管的域名<br>
+在左侧点击<code class="notranslate">规则</code>，然后点击<code class="notranslate">概述</code><br>
+新建一个<code class="notranslate">URL重写</code>规则<br>
+<code class="notranslate">规则名字</code>随便填<br>
+在<code class="notranslate">如果传入请求匹配…</code>中选择<code class="notranslate">自定义筛选表达式</code><br>
+<code class="notranslate">当传入请求匹配时...</code>按照下面这样子填</p>
+<pre lang="text" class="notranslate"><code class="notranslate">字段|运算符|值
+主机名|等于|这里写你你的`Pages`绑定的域名地址
+And
+URI 路径|等于|/h
+Or
+URI 路径|等于|/v
+</code></pre>
+<p><code class="notranslate">表达式预览</code>是这样的</p>
+<pre class="notranslate"><code class="notranslate">(http.host eq "你Pages绑定的域名地址" and http.request.uri.path eq "/h") or (http.request.uri.path eq "/v")
+# 这里贴上我的表达式
+(http.host eq "g-bg-api.traveler.dpdns.org" and http.request.uri.path eq "/h") or (http.request.uri.path eq "/v")
+</code></pre>
+<p>在下面<code class="notranslate">路径</code>这里面选<code class="notranslate">重写到</code><br>
+然后选择<code class="notranslate">Dynamic</code><br>
+输入下面这个</p>
+<pre class="notranslate"><code class="notranslate">concat(http.request.uri.path, "/", substring(uuidv4(cf.random_seed), 0, 3), ".jpg")
+</code></pre>
+<p>完整的配置图如下</p>
+<p>然后点击<code class="notranslate">保存</code><br>
+接下来就弄好了</p>
+<h2>访问地址</h2>
+<div class="highlight highlight-source-httpspec"><pre class="notranslate"><span class="pl-ii"># 电脑版</span>
+<span class="pl-k">GET</span> <span class="pl-ii">https://你的域名/h</span>
+<span class="pl-ii"># 手机版</span>
+<span class="pl-k">GET</span> <span class="pl-ii">https://你的域名/v</span></pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️转载请注明出处❤️</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
