@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TR114514の小窝</title><link>http://b.traveler.dpdns.org</link><description>114514&lt;br&gt;❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</description><copyright>TR114514の小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=2197077248&amp;s=640</url><title>avatar</title><link>http://b.traveler.dpdns.org</link></image><lastBuildDate>Sun, 11 Jan 2026 04:05:19 +0000</lastBuildDate><managingEditor>TR114514の小窝</managingEditor><ttl>60</ttl><webMaster>TR114514の小窝</webMaster><item><title>使用VTube Studio软件虚拟形象直播</title><link>http://b.traveler.dpdns.org/post/8.html</link><description># 1. 前言
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TR114514の小窝</title><link>http://b.traveler.dpdns.org</link><description>114514&lt;br&gt;❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</description><copyright>TR114514の小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=2197077248&amp;s=640</url><title>avatar</title><link>http://b.traveler.dpdns.org</link></image><lastBuildDate>Sun, 11 Jan 2026 04:05:58 +0000</lastBuildDate><managingEditor>TR114514の小窝</managingEditor><ttl>60</ttl><webMaster>TR114514の小窝</webMaster><item><title>使用VTube Studio软件虚拟形象直播</title><link>http://b.traveler.dpdns.org/post/8.html</link><description># 1. 前言
 你有见过这样的虚拟人物直播间吗？
 `Gmeek-html&lt;img src='https://img.traveler.dpdns.org/v2/MJModTW.png'&gt;`
 本篇文章会教你怎么一步步做出这种直播间
@@ -30,7 +30,7 @@
 ```
 ⓘ 该账号封禁中
 ```
-然后就可以去骗你的朋友了😄😄😄。</description><guid isPermaLink="true">http://b.traveler.dpdns.org/post/6.html</guid><pubDate>Sat, 10 Jan 2026 23:11:44 +0000</pubDate></item><item><title>免费无限制壁纸/背景API</title><link>http://b.traveler.dpdns.org/post/5.html</link><description># 调用
+然后就可以去骗你的朋友了😄😄😄。</description><guid isPermaLink="true">http://b.traveler.dpdns.org/post/6.html</guid><pubDate>Sat, 10 Jan 2026 23:11:44 +0000</pubDate></item><item><title>免费无限制壁纸/背景API</title><link>http://b.traveler.dpdns.org/post/5.html</link><description># 1. 调用
 
 直接上链接
 ```http
@@ -39,8 +39,8 @@ GET https://g-bg-api.traveler.dpdns.org/h
 # 下面这个是手机版的
 GET https://g-bg-api.traveler.dpdns.org/v
 ```
-# 搭建教程
-## 部署到Cloudflare Pages
+# 2. 搭建教程
+## 2.1 部署到Cloudflare Pages
 打开 [TR114514-Coder/bg-api](https://github.com/TR114514-Coder/bg-api)
 `Fork`一份到自己的账号下
 然后`git clone`下来
@@ -54,7 +54,7 @@ GET https://g-bg-api.traveler.dpdns.org/v
 如果是压缩`dist`文件夹的话，就把压缩包上传到`Cloudflare Pages`
 接下来把构建目录设置为`dist`
 最后绑定一个`自定义域名`即可
-## 设置规则
+## 2.2 设置规则
 点击你托管的域名
 在左侧点击`规则`，然后点击`概述`
 新建一个`URL重写`规则
@@ -70,7 +70,7 @@ Or
 URI 路径|等于|/v
 ```
 `表达式预览`是这样的
-```
+```text
 (http.host eq '你Pages绑定的域名地址' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
 # 这里贴上我的表达式
 (http.host eq 'g-bg-api.traveler.dpdns.org' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
@@ -78,7 +78,7 @@ URI 路径|等于|/v
 在下面`路径`这里面选`重写到`
 然后选择`Dynamic`
 输入下面这个
-```
+```text
 concat(http.request.uri.path, '/', substring(uuidv4(cf.random_seed), 0, 3), '.jpg')
 ```
 完整的配置图如下

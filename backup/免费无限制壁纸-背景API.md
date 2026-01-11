@@ -1,4 +1,4 @@
-# 调用
+# 1. 调用
 
 直接上链接
 ```http
@@ -7,8 +7,8 @@ GET https://g-bg-api.traveler.dpdns.org/h
 # 下面这个是手机版的
 GET https://g-bg-api.traveler.dpdns.org/v
 ```
-# 搭建教程
-## 部署到Cloudflare Pages
+# 2. 搭建教程
+## 2.1 部署到Cloudflare Pages
 打开 [TR114514-Coder/bg-api](https://github.com/TR114514-Coder/bg-api)
 `Fork`一份到自己的账号下
 然后`git clone`下来
@@ -22,7 +22,7 @@ GET https://g-bg-api.traveler.dpdns.org/v
 如果是压缩`dist`文件夹的话，就把压缩包上传到`Cloudflare Pages`
 接下来把构建目录设置为`dist`
 最后绑定一个`自定义域名`即可
-## 设置规则
+## 2.2 设置规则
 点击你托管的域名
 在左侧点击`规则`，然后点击`概述`
 新建一个`URL重写`规则
@@ -38,7 +38,7 @@ Or
 URI 路径|等于|/v
 ```
 `表达式预览`是这样的
-```
+```text
 (http.host eq "你Pages绑定的域名地址" and http.request.uri.path eq "/h") or (http.request.uri.path eq "/v")
 # 这里贴上我的表达式
 (http.host eq "g-bg-api.traveler.dpdns.org" and http.request.uri.path eq "/h") or (http.request.uri.path eq "/v")
@@ -46,7 +46,7 @@ URI 路径|等于|/v
 在下面`路径`这里面选`重写到`
 然后选择`Dynamic`
 输入下面这个
-```
+```text
 concat(http.request.uri.path, "/", substring(uuidv4(cf.random_seed), 0, 3), ".jpg")
 ```
 完整的配置图如下

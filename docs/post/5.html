@@ -10,7 +10,7 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="# 调用
+<meta name="description" content="# 1. 调用
 
 直接上链接
 ```http
@@ -19,8 +19,8 @@ GET https://g-bg-api.traveler.dpdns.org/h
 # 下面这个是手机版的
 GET https://g-bg-api.traveler.dpdns.org/v
 ```
-# 搭建教程
-## 部署到Cloudflare Pages
+# 2. 搭建教程
+## 2.1 部署到Cloudflare Pages
 打开 [TR114514-Coder/bg-api](https://github.com/TR114514-Coder/bg-api)
 `Fork`一份到自己的账号下
 然后`git clone`下来
@@ -34,7 +34,7 @@ GET https://g-bg-api.traveler.dpdns.org/v
 如果是压缩`dist`文件夹的话，就把压缩包上传到`Cloudflare Pages`
 接下来把构建目录设置为`dist`
 最后绑定一个`自定义域名`即可
-## 设置规则
+## 2.2 设置规则
 点击你托管的域名
 在左侧点击`规则`，然后点击`概述`
 新建一个`URL重写`规则
@@ -50,7 +50,7 @@ Or
 URI 路径|等于|/v
 ```
 `表达式预览`是这样的
-```
+```text
 (http.host eq '你Pages绑定的域名地址' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
 # 这里贴上我的表达式
 (http.host eq 'g-bg-api.traveler.dpdns.org' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
@@ -58,7 +58,7 @@ URI 路径|等于|/v
 在下面`路径`这里面选`重写到`
 然后选择`Dynamic`
 输入下面这个
-```
+```text
 concat(http.request.uri.path, '/', substring(uuidv4(cf.random_seed), 0, 3), '.jpg')
 ```
 完整的配置图如下
@@ -73,7 +73,7 @@ GET https://你的域名/h
 GET https://你的域名/v
 ```。">
 <meta property="og:title" content="免费无限制壁纸/背景API">
-<meta property="og:description" content="# 调用
+<meta property="og:description" content="# 1. 调用
 
 直接上链接
 ```http
@@ -82,8 +82,8 @@ GET https://g-bg-api.traveler.dpdns.org/h
 # 下面这个是手机版的
 GET https://g-bg-api.traveler.dpdns.org/v
 ```
-# 搭建教程
-## 部署到Cloudflare Pages
+# 2. 搭建教程
+## 2.1 部署到Cloudflare Pages
 打开 [TR114514-Coder/bg-api](https://github.com/TR114514-Coder/bg-api)
 `Fork`一份到自己的账号下
 然后`git clone`下来
@@ -97,7 +97,7 @@ GET https://g-bg-api.traveler.dpdns.org/v
 如果是压缩`dist`文件夹的话，就把压缩包上传到`Cloudflare Pages`
 接下来把构建目录设置为`dist`
 最后绑定一个`自定义域名`即可
-## 设置规则
+## 2.2 设置规则
 点击你托管的域名
 在左侧点击`规则`，然后点击`概述`
 新建一个`URL重写`规则
@@ -113,7 +113,7 @@ Or
 URI 路径|等于|/v
 ```
 `表达式预览`是这样的
-```
+```text
 (http.host eq '你Pages绑定的域名地址' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
 # 这里贴上我的表达式
 (http.host eq 'g-bg-api.traveler.dpdns.org' and http.request.uri.path eq '/h') or (http.request.uri.path eq '/v')
@@ -121,7 +121,7 @@ URI 路径|等于|/v
 在下面`路径`这里面选`重写到`
 然后选择`Dynamic`
 输入下面这个
-```
+```text
 concat(http.request.uri.path, '/', substring(uuidv4(cf.random_seed), 0, 3), '.jpg')
 ```
 完整的配置图如下
@@ -199,14 +199,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h1>调用</h1>
+<div class="markdown-body" id="postBody"><h1>1. 调用</h1>
 <p>直接上链接</p>
 <div class="highlight highlight-source-httpspec"><pre class="notranslate"><span class="pl-ii"># 下面这个是PC，即电脑版的</span>
 <span class="pl-k">GET</span><span class="pl-c1"> https://g-bg-api.traveler.dpdns.org/h</span>
 <span class="pl-ii"># 下面这个是手机版的</span>
 <span class="pl-k">GET</span><span class="pl-c1"> https://g-bg-api.traveler.dpdns.org/v</span></pre></div>
-<h1>搭建教程</h1>
-<h2>部署到Cloudflare Pages</h2>
+<h1>2. 搭建教程</h1>
+<h2>2.1 部署到Cloudflare Pages</h2>
 <p>打开 <a href="https://github.com/TR114514-Coder/bg-api">TR114514-Coder/bg-api</a><br>
 <code class="notranslate">Fork</code>一份到自己的账号下<br>
 然后<code class="notranslate">git clone</code>下来<br>
@@ -220,7 +220,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 如果是压缩<code class="notranslate">dist</code>文件夹的话，就把压缩包上传到<code class="notranslate">Cloudflare Pages</code><br>
 接下来把构建目录设置为<code class="notranslate">dist</code><br>
 最后绑定一个<code class="notranslate">自定义域名</code>即可</p>
-<h2>设置规则</h2>
+<h2>2.2 设置规则</h2>
 <p>点击你托管的域名<br>
 在左侧点击<code class="notranslate">规则</code>，然后点击<code class="notranslate">概述</code><br>
 新建一个<code class="notranslate">URL重写</code>规则<br>
@@ -235,14 +235,14 @@ Or
 URI 路径|等于|/v
 </code></pre>
 <p><code class="notranslate">表达式预览</code>是这样的</p>
-<pre class="notranslate"><code class="notranslate">(http.host eq "你Pages绑定的域名地址" and http.request.uri.path eq "/h") or (http.request.uri.path eq "/v")
+<pre lang="text" class="notranslate"><code class="notranslate">(http.host eq "你Pages绑定的域名地址" and http.request.uri.path eq "/h") or (http.request.uri.path eq "/v")
 # 这里贴上我的表达式
 (http.host eq "g-bg-api.traveler.dpdns.org" and http.request.uri.path eq "/h") or (http.request.uri.path eq "/v")
 </code></pre>
 <p>在下面<code class="notranslate">路径</code>这里面选<code class="notranslate">重写到</code><br>
 然后选择<code class="notranslate">Dynamic</code><br>
 输入下面这个</p>
-<pre class="notranslate"><code class="notranslate">concat(http.request.uri.path, "/", substring(uuidv4(cf.random_seed), 0, 3), ".jpg")
+<pre lang="text" class="notranslate"><code class="notranslate">concat(http.request.uri.path, "/", substring(uuidv4(cf.random_seed), 0, 3), ".jpg")
 </code></pre>
 <p>完整的配置图如下<br>
 <img src="https://img.traveler.dpdns.org/v2/vaJ3Uor.png"><br>
