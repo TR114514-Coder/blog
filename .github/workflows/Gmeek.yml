@@ -1,4 +1,4 @@
-name: build Gmeek
+name: 构建 Gmeek
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
     
 jobs:
   build:
-    name: Generate blog
+    name: 生成博客html
     runs-on: ubuntu-24.04
     if: ${{ github.event.repository.owner.id == github.event.sender.id || github.event_name == 'schedule' }}
     permissions: write-all
@@ -70,7 +70,7 @@ jobs:
           path: 'docs/.'
           
   deploy:
-    name: Deploy blog
+    name: 部署博客
     runs-on: ubuntu-24.04
     needs: build
     permissions:
