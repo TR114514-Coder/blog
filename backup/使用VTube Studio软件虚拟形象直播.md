@@ -8,6 +8,7 @@
 如果你不想用百度网盘，可以打开下面这个链接下载
 [yumi皮套下载链接](https://github.com/TR114514-Coder/FileCloud/releases/tag/yumi%E6%A8%A1%E5%9E%8B)
 点击[yumi.rar](https://github.com/TR114514-Coder/FileCloud/releases/download/yumi%E6%A8%A1%E5%9E%8B/yumi.rar)下载即可，高速下载链接：[gh-proxy.com加速](https://gh-proxy.com/https://github.com/TR114514-Coder/FileCloud/releases/download/yumi%E6%A8%A1%E5%9E%8B/yumi.rar)
+然后就是我整合了一些皮套放在[这里](https://github.com/TR114514-Coder/FileCloud/releases/tag/VTubeStudio%E6%A8%A1%E5%9E%8B%E5%88%86%E4%BA%AB)
 ## 2.2 安装软件
 下载好皮套之后，我们需要下载[Steam](https://s.team)
 速度慢的话可以使用[Watt toolkit](https://steampp.net/)进行加速

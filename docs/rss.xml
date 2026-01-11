@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TR114514の小窝</title><link>http://b.traveler.dpdns.org</link><description>114514&lt;br&gt;❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</description><copyright>TR114514の小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=2197077248&amp;s=640</url><title>avatar</title><link>http://b.traveler.dpdns.org</link></image><lastBuildDate>Sun, 11 Jan 2026 05:10:04 +0000</lastBuildDate><managingEditor>TR114514の小窝</managingEditor><ttl>60</ttl><webMaster>TR114514の小窝</webMaster><item><title>使用Gmeek搭建一个自己的博客</title><link>http://b.traveler.dpdns.org/post/9.html</link><description># 1. 什么是Gmeek
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TR114514の小窝</title><link>http://b.traveler.dpdns.org</link><description>114514&lt;br&gt;❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</description><copyright>TR114514の小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=2197077248&amp;s=640</url><title>avatar</title><link>http://b.traveler.dpdns.org</link></image><lastBuildDate>Sun, 11 Jan 2026 07:36:29 +0000</lastBuildDate><managingEditor>TR114514の小窝</managingEditor><ttl>60</ttl><webMaster>TR114514の小窝</webMaster><item><title>使用Gmeek搭建一个自己的博客</title><link>http://b.traveler.dpdns.org/post/9.html</link><description># 1. 什么是Gmeek
 [Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于`Github Pages` 、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。</description><guid isPermaLink="true">http://b.traveler.dpdns.org/post/9.html</guid><pubDate>Sun, 11 Jan 2026 04:56:56 +0000</pubDate></item><item><title>使用VTube Studio软件虚拟形象直播</title><link>http://b.traveler.dpdns.org/post/8.html</link><description># 1. 前言
 你有见过这样的虚拟人物直播间吗？
 `Gmeek-html&lt;img src='https://img.traveler.dpdns.org/v2/MJModTW.png'&gt;`
@@ -10,6 +10,7 @@
 如果你不想用百度网盘，可以打开下面这个链接下载
 [yumi皮套下载链接](https://github.com/TR114514-Coder/FileCloud/releases/tag/yumi%E6%A8%A1%E5%9E%8B)
 点击[yumi.rar](https://github.com/TR114514-Coder/FileCloud/releases/download/yumi%E6%A8%A1%E5%9E%8B/yumi.rar)下载即可，高速下载链接：[gh-proxy.com加速](https://gh-proxy.com/https://github.com/TR114514-Coder/FileCloud/releases/download/yumi%E6%A8%A1%E5%9E%8B/yumi.rar)
+然后就是我整合了一些皮套放在[这里](https://github.com/TR114514-Coder/FileCloud/releases/tag/VTubeStudio%E6%A8%A1%E5%9E%8B%E5%88%86%E4%BA%AB)
 ## 2.2 安装软件
 下载好皮套之后，我们需要下载[Steam](https://s.team)
 速度慢的话可以使用[Watt toolkit](https://steampp.net/)进行加速
