@@ -17,6 +17,8 @@
 然后在右上角输入`VTube Studio`
 若果你不需要`DLC`，那么它就是免费的
 `Gmeek-html<img src="https://img.traveler.dpdns.org/v2/X30rT6Z.png">`
+现在，把这个`VTube Studio`下载下来
+
 
 
 # 3. b站视频教程
