@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TR114514の小窝</title><link>http://b.traveler.dpdns.org</link><description>114514&lt;br&gt;❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</description><copyright>TR114514の小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=2197077248&amp;s=640</url><title>avatar</title><link>http://b.traveler.dpdns.org</link></image><lastBuildDate>Sun, 11 Jan 2026 04:57:25 +0000</lastBuildDate><managingEditor>TR114514の小窝</managingEditor><ttl>60</ttl><webMaster>TR114514の小窝</webMaster><item><title>使用Gmeek搭建一个自己的博客</title><link>http://b.traveler.dpdns.org/post/9.html</link><description># 1. 什么是Gmeek
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TR114514の小窝</title><link>http://b.traveler.dpdns.org</link><description>114514&lt;br&gt;❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</description><copyright>TR114514の小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=2197077248&amp;s=640</url><title>avatar</title><link>http://b.traveler.dpdns.org</link></image><lastBuildDate>Sun, 11 Jan 2026 05:10:04 +0000</lastBuildDate><managingEditor>TR114514の小窝</managingEditor><ttl>60</ttl><webMaster>TR114514の小窝</webMaster><item><title>使用Gmeek搭建一个自己的博客</title><link>http://b.traveler.dpdns.org/post/9.html</link><description># 1. 什么是Gmeek
 [Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于`Github Pages` 、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。</description><guid isPermaLink="true">http://b.traveler.dpdns.org/post/9.html</guid><pubDate>Sun, 11 Jan 2026 04:56:56 +0000</pubDate></item><item><title>使用VTube Studio软件虚拟形象直播</title><link>http://b.traveler.dpdns.org/post/8.html</link><description># 1. 前言
 你有见过这样的虚拟人物直播间吗？
 `Gmeek-html&lt;img src='https://img.traveler.dpdns.org/v2/MJModTW.png'&gt;`
@@ -20,7 +20,9 @@
 若果你不需要`DLC`，那么它就是免费的
 `Gmeek-html&lt;img src='https://img.traveler.dpdns.org/v2/X30rT6Z.png'&gt;`
 现在，把这个`VTube Studio`下载下来
+## 2.3 安装皮套
 
+## 2.4 配置VTube Studio
 
 
 # 3. b站视频教程
