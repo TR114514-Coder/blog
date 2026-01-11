@@ -219,100 +219,23 @@ X^2^（上标）</p>
 <p><a href="https://example.com" rel="nofollow">普通链接</a><br>
 <a href="https://example.com" title="链接标题" rel="nofollow">带标题的链接</a></p>
 <h3>引用式链接</h3>
-<p>这是一个引用式链接：<a href="https://example.com" title="示例链接" rel="nofollow">示例</a>和另一个<a href="https://example.org" rel="nofollow">引用</a></p>
-<h3>图片</h3>
-<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f8489346ac4757c12ca0d7a67cdb3ccdfb02b8ca7e5ed88d173cd219a0fc8b31/68747470733a2f2f7669612e706c616365686f6c6465722e636f6d2f313530"><img src="https://camo.githubusercontent.com/f8489346ac4757c12ca0d7a67cdb3ccdfb02b8ca7e5ed88d173cd219a0fc8b31/68747470733a2f2f7669612e706c616365686f6c6465722e636f6d2f313530" alt="替代文本" title="图片标题" data-canonical-src="https://via.placeholder.com/150" style="max-width: 100%;"></a></p>
-<h3>引用式图片</h3>
-<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/80b531b9825e407e2a9e9e4dd76cae0199e468a8a1c8bb79b0f8bcefc28591f4/68747470733a2f2f7669612e706c616365686f6c6465722e636f6d2f33303078313030"><img src="https://camo.githubusercontent.com/80b531b9825e407e2a9e9e4dd76cae0199e468a8a1c8bb79b0f8bcefc28591f4/68747470733a2f2f7669612e706c616365686f6c6465722e636f6d2f33303078313030" alt="替代文本" title="引用式图片" data-canonical-src="https://via.placeholder.com/300x100" style="max-width: 100%;"></a></p>
+<p>这是一个引用式链接：[示例][1]和另一个[引用][2]</p>
+<p>[1]: <a href="https://example.com" rel="nofollow">https://example.com</a> "示例链接"[2]: <a href="https://example.org" rel="nofollow">https://example.org</a></p>
 <h2>8. 分割线</h2>
 <p>下面是分割线：</p>
 <hr>
 <p>另一种分割线：</p>
 <hr>
 <h2>9. 脚注</h2>
-<p>这是一个带有脚注的文本<sup><a href="#user-content-fn-1-a54110657e38a4236e307b0d4f447c2b" id="user-content-fnref-1-a54110657e38a4236e307b0d4f447c2b" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>。</p>
-<p>这是另一个脚注<sup><a href="#user-content-fn-2-a54110657e38a4236e307b0d4f447c2b" id="user-content-fnref-2-a54110657e38a4236e307b0d4f447c2b" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>。</p>
-<h2>10. 定义列表</h2>
-<p>苹果<br>
-: 一种水果，通常是红色或绿色</p>
-<p>香蕉<br>
-: 一种黄色的水果</p>
-<p>橙子<br>
-: 柑橘类水果，富含维生素C</p>
-<h2>11. Emoji</h2>
-<p>😄 ❤️ 🚀 👍 <g-emoji class="g-emoji" alias="warning">⚠️</g-emoji></p>
-<h2>12. 数学公式</h2>
-<p>行内公式：$E = mc^2$</p>
-<p>块级公式：<br>
-$$<br>
-\sum_{i=1}^{n} i = \frac{n(n+1)}{2}<br>
-$$</p>
-<h2>13. 图表（Mermaid）</h2>
-<div class="highlight highlight-source-mermaid"><pre class="notranslate"><span class="pl-k">graph</span> <span class="pl-c1">TD</span>
-    <span class="pl-ent">A</span><span class="pl-s"><span class="pl-pds"><span class="pl-sg">[</span></span>开始<span class="pl-pds"><span class="pl-sg">]</span></span></span> <span class="pl-k">--&gt;</span> <span class="pl-ent">B</span><span class="pl-s"><span class="pl-pds"><span class="pl-sg">{</span></span>判断<span class="pl-pds"><span class="pl-sg">}</span></span></span>
-    <span class="pl-ent">B</span> <span class="pl-k">--&gt;</span><span class="pl-k">|</span><span class="pl-s">是</span><span class="pl-k">|</span> <span class="pl-ent">C</span><span class="pl-s"><span class="pl-pds"><span class="pl-sg">[</span></span>执行操作<span class="pl-pds"><span class="pl-sg">]</span></span></span>
-    <span class="pl-ent">B</span> <span class="pl-k">--&gt;</span><span class="pl-k">|</span><span class="pl-s">否</span><span class="pl-k">|</span> <span class="pl-ent">D</span><span class="pl-s"><span class="pl-pds"><span class="pl-sg">[</span></span>结束<span class="pl-pds"><span class="pl-sg">]</span></span></span>
-    <span class="pl-ent">C</span> <span class="pl-k">--&gt;</span> <span class="pl-ent">D</span></pre></div>
-<div class="highlight highlight-source-mermaid"><pre class="notranslate"><span class="pl-k">pie</span> <span class="pl-k">title</span> <span class="pl-s">浏览器使用占比</span>
-    <span class="pl-s">"Chrome<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-c1">65.0</span>
-    <span class="pl-s">"Safari<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-c1">15.0</span>
-    <span class="pl-s">"Firefox<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-c1">10.0</span>
-    <span class="pl-s">"其他<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-c1">10.0</span></pre></div>
-<h2>14. HTML 元素</h2>
-<p>这是一个带有样式的 HTML 段落。</p>
-<details>
-<summary>点击展开详情</summary>
-这是一个隐藏的详细信息块。
-</details>
-<h2>15. 转义字符</h2>
-<p>*这个星号不会被解释为斜体*<br>
-\ 反斜杠<br>
-` 反引号<br>
-[ 方括号</p>
-<h2>16. 复选框</h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> 任务1</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> 任务2</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> 任务3</li>
-</ul>
-<h2>17. 缩写</h2>
-<p>这个文档使用 Markdown 编写，HTML 是其超集。</p>
-<p>*[HTML]: 超文本标记语言<br>
-*[Markdown]: 轻量级标记语言</p>
-<h2>18. 上标和下标</h2>
-<p>水的化学式：H<del>2</del>O</p>
-<p>勾股定理：a^2^ + b^2^ = c^2^</p>
-<h2>19. 注音</h2>
-<p>Markdown<ruby>标注<rt>biāo zhù</rt></ruby>测试</p>
-<h2>20. 内联属性</h2>
-<p>这是一个普通段落。</p>
-<p>{#special .highlight style="color: red;"}<br>
-这个段落有 ID、class 和内联样式。</p>
-<h2>21. 目录</h2>
-<p>[[TOC]]</p>
-<h2>22. 注释</h2>
-
-<p>这是一个可见的段落。</p>
-
-<h2>23. 特殊符号</h2>
-<p>© 2023 版权所有<br>
-温度：25°C<br>
-分数：½<br>
-箭头：→ ← ↑ ↓</p>
-<h2>24. 进度条</h2>
-<p>进度：[======    ] 60%</p>
-<h2>25. 键盘按键</h2>
-<p>按 <kbd>Ctrl</kbd> + <kbd>C</kbd> 复制<br>
-按 <kbd>Cmd</kbd> + <kbd>Q</kbd> 退出</p>
-<hr>
-<p><strong>结束语</strong>：这个文档展示了大多数常用的 Markdown 元素。不同的 Markdown 解析器可能支持不同的功能扩展。</p>
+<p>这是一个带有脚注的文本<sup><a href="#user-content-fn-1-0b46f8fba6d4374dd9edfa857c8dd0e6" id="user-content-fnref-1-0b46f8fba6d4374dd9edfa857c8dd0e6" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>。</p>
+<p>这是另一个脚注<sup><a href="#user-content-fn-2-0b46f8fba6d4374dd9edfa857c8dd0e6" id="user-content-fnref-2-0b46f8fba6d4374dd9edfa857c8dd0e6" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>。</p>
 <section data-footnotes="" class="footnotes"><h2 id="footnote-label" class="sr-only">Footnotes</h2>
 <ol>
-<li id="user-content-fn-1-a54110657e38a4236e307b0d4f447c2b">
-<p>这是第一个脚注的内容。 <a href="#user-content-fnref-1-a54110657e38a4236e307b0d4f447c2b" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+<li id="user-content-fn-1-0b46f8fba6d4374dd9edfa857c8dd0e6">
+<p>这是第一个脚注的内容。 <a href="#user-content-fnref-1-0b46f8fba6d4374dd9edfa857c8dd0e6" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
 </li>
-<li id="user-content-fn-2-a54110657e38a4236e307b0d4f447c2b">
-<p>这是第二个脚注的内容，可以包含多行文本。 <a href="#user-content-fnref-2-a54110657e38a4236e307b0d4f447c2b" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+<li id="user-content-fn-2-0b46f8fba6d4374dd9edfa857c8dd0e6">
+<p>这是第二个脚注的内容，可以包含多行文本。 <a href="#user-content-fnref-2-0b46f8fba6d4374dd9edfa857c8dd0e6" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
 </li>
 </ol>
 </section></div>
