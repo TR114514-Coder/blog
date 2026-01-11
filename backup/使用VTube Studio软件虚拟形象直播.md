@@ -2,7 +2,7 @@
 你有见过这样的虚拟人物直播间吗？
 `Gmeek-html<img src="https://img.traveler.dpdns.org/v2/MJModTW.png">`
 本篇文章会教你怎么一步步做出这种直播间
-特别感谢：[BV1aqtSzEEmK](https://bilibili.com/video/BV1aqtSzEEmK/)，[BV1LM41137vK](https://www.bilibili.com/video/BV1LM41137vK/)
+特别感谢：[BV1aqtSzEEmK](https://bilibili.com/video/BV1aqtSzEEmK/)，[BV1LM41137vK](https://www.bilibili.com/video/BV1LM41137vK/)，[7Apoi](https://space.bilibili.com/3016706)
 # 2. 教程
 ## 2.1 下载皮套
 如果你不想用百度网盘，可以打开下面这个链接下载
